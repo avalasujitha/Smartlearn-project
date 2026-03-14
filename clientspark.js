@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Client Spark</title>
+<style>
+body{
+font-family: Arial;
+background:#f2f2f2;
+text-align:center;
+}
+
+.container{
+background:white;
+width:300px;
+margin:auto;
+padding:20px;
+margin-top:100px;
+box-shadow:0px 0px 10px gray;
+}
+
+input,button{
+width:90%;
+padding:10px;
+margin:10px;
+}
+
+button{
+background:#007bff;
+color:white;
+border:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>Client Spark</h2>
+
+<form action="/addClient" method="POST">
+<input type="text" name="name" placeholder="Client Name" required>
+<input type="email" name="email" placeholder="Client Email" required>
+<button type="submit">Add Client</button>
+</form>
+
+</div>
+
+</body>
+</html>
